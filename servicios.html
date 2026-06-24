@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Ópticos Clínicos - Tu Óptica Familiar</title>
+  <meta name="description" content="Evaluaciones de la salud visual en San Miguel, Lima. Medida de la vista computarizada, descarte de ambliopía, estrabismo, pterigión y contactología.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo-optica-familiar.jpg" type="image/jpeg">
+</head>
+<body>
+
+  <div class="menu-backdrop"></div>
+
+  <!-- Cabecera de Navegación -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link">
+        <img src="logo-optica-familiar.jpg" alt="Tu Óptica Familiar Logo" class="logo-img">
+        <div class="logo-text">
+          TU ÓPTICA FAMILIAR
+          <span>Salud Visual Integral</span>
+        </div>
+      </a>
+
+      <!-- Menú Escritorio -->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="productos.html" class="nav-link">Productos</a></li>
+          <li><a href="convenios.html" class="nav-link">Convenios</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón de Hamburguesa Móvil -->
+      <button class="burger-btn" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú Móvil Lateral -->
+  <div class="mobile-menu">
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Inicio</a></li>
+        <li><a href="servicios.html" class="mobile-nav-link">Servicios</a></li>
+        <li><a href="productos.html" class="mobile-nav-link">Productos</a></li>
+        <li><a href="convenios.html" class="mobile-nav-link">Convenios</a></li>
+        <li><a href="contacto.html" class="mobile-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="contacto.html" class="btn btn-primary" style="margin-top: 2rem; width: 100%;">Agendar Cita</a>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         Hero de Servicios
+         ========================================== -->
+    <section class="hero" style="padding: 4rem 0 3rem 0;">
+      <div class="container text-center">
+        <span class="hero-tagline">Evaluación Clínica Profesional</span>
+        <h1>Nuestros Servicios Ópticos</h1>
+        <p class="hero-desc">
+          En Tu Óptica Familiar, nos enfocamos tanto en obtener la receta exacta para tus lunas como en monitorizar la salud integral de tu sistema visual.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         Cuerpo de Servicios Especializados
+         ========================================== -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        
+        <!-- Servicio 1: Medida computarizada -->
+        <div id="medida" class="corporate-grid" style="margin-bottom: 5rem; align-items: center;">
+          <div>
+            <div class="service-icon-box" style="width: 70px; height: 70px; background-color: var(--primary); color: white;">
+              <svg viewBox="0 0 24 24" style="width: 36px; height: 36px;"><path fill="currentColor" d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/></svg>
+            </div>
+            <h2 style="font-size: 2rem; margin-top: 1rem;">Medida de la Vista Computarizada</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 1.05rem;">
+              Utilizamos un <strong>Autorefractómetro Queratómetro</strong> digital de alta precisión. Este instrumento mide objetivamente la curvatura de la córnea y calcula de forma automática la refracción del ojo. 
+            </p>
+            <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 1.05rem;">
+              Posteriormente, nuestro especialista realiza pruebas de agudeza visual subjetivas para calibrar la comodidad del paciente, asegurando una receta de lentes perfecta y adaptada a su estilo de vida y trabajo.
+            </p>
+            <a href="contacto.html" class="btn btn-primary" style="margin-top: 1.5rem;">Reservar Cita</a>
+          </div>
+          <div class="hero-img-container">
+            <div class="hero-img-wrapper" style="box-shadow: var(--shadow-md);">
+              <img src="examen-vista.png" alt="Examen de vista computarizado con equipo moderno">
+            </div>
+          </div>
+        </div>
+
+        <hr style="border: 0; height: 1px; background: var(--border-color); margin: 5rem 0;">
+
+        <!-- Grid de los otros 4 servicios -->
+        <div class="section-header text-center">
+          <h2>Evaluaciones Clínicas Especializadas</h2>
+          <p>La salud visual va mucho más allá de leer letras en una cartilla. Cuidamos cada aspecto de tus ojos.</p>
+        </div>
+
+        <div class="services-grid" style="gap: 3rem;">
+          <!-- Motilidad Ocular -->
+          <div id="motilidad" class="service-card" style="padding: 3rem 2.5rem;">
+            <div class="service-icon-box" style="background-color: var(--primary-ultra-light); color: var(--primary);">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Motilidad Ocular y Estrabismo</h3>
+            <p>
+              Evaluamos los movimientos coordinados de ambos ojos. Esto permite descartar y tratar el estrabismo (desviación ocular) y forias latentes (tensión muscular), causantes frecuentes de visión doble, dolores de cabeza frecuentes y fatiga en lecturas prolongadas.
+            </p>
+            <a href="contacto.html?service=Motilidad" class="btn btn-outline" style="margin-top: auto; font-size: 0.85rem; padding: 0.6rem 1rem;">Agendar Descarte</a>
+          </div>
+
+          <!-- Ambliopía -->
+          <div id="ambliopia" class="service-card" style="padding: 3rem 2.5rem;">
+            <div class="service-icon-box" style="background-color: var(--primary-ultra-light); color: var(--primary);">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.22 19.58 10.57 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Descarte de Ambliopía (Ojo Vago)</h3>
+            <p>
+              La ambliopía es la falta de desarrollo del canal visual en un ojo, común en niños. Realizamos despistajes a temprana edad para corregir a tiempo este problema, previniendo dificultades futuras en el aprendizaje, concentración y rendimiento escolar.
+            </p>
+            <a href="contacto.html?service=Ambliopia" class="btn btn-outline" style="margin-top: auto; font-size: 0.85rem; padding: 0.6rem 1rem;">Agendar Descarte</a>
+          </div>
+
+          <!-- Pterigión -->
+          <div id="pterigion" class="service-card" style="padding: 3rem 2.5rem;">
+            <div class="service-icon-box" style="background-color: var(--primary-ultra-light); color: var(--primary);">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Descarte de Pterigión (Carnosidad)</h3>
+            <p>
+              Evaluamos la superficie ocular para descartar el crecimiento anormal de tejido sobre la córnea (pterigión), estimulado por el polvo, sequedad y radiación solar. Brindamos pautas de cuidado, tratamiento preventivo y remisión en caso de requerir cirugía.
+            </p>
+            <a href="contacto.html?service=Pterigion" class="btn btn-outline" style="margin-top: auto; font-size: 0.85rem; padding: 0.6rem 1rem;">Agendar Descarte</a>
+          </div>
+
+          <!-- Contactología -->
+          <div id="contactologia" class="service-card" style="padding: 3rem 2.5rem;">
+            <div class="service-icon-box" style="background-color: var(--primary-ultra-light); color: var(--primary);">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 11a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Contactología Especializada</h3>
+            <p>
+              Ofrecemos el servicio de adaptación personalizada para lentes de contacto. Te ayudamos a seleccionar entre lentes de contacto blandos, esféricos, tóricos (para astigmatismo) o cosméticos, garantizando comodidad, higiene y una oxigenación corneal óptima.
+            </p>
+            <a href="contacto.html?service=Contactologia" class="btn btn-outline" style="margin-top: auto; font-size: 0.85rem; padding: 0.6rem 1rem;">Solicitar Adaptación</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>TU ÓPTICA FAMILIAR</h3>
+        <p>Tu aliado en el cuidado visual. Ofrecemos exámenes computarizados, lentes de calidad y campañas corporativas en Lima.</p>
+        <p style="font-size: 0.85rem; color: var(--accent);">Optometristas calificados a tu servicio.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Enlaces Rápidos</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos y Lunas</a></li>
+          <li><a href="convenios.html">Convenios Corporativos</a></li>
+          <li><a href="contacto.html">Contacto y Citas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Calle "B" 136, Urb. Bartolomé Herrera (Alt. Cdra 16 Av. La Marina), San Miguel, Lima.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>962 768 359 / (01) 263-9160</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>gerencia@tuopticafamiliar.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Tu Óptica Familiar. Todos los derechos reservados.</p>
+      <p>Diseño y Salud Visual Integral en San Miguel, Lima.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
