@@ -1056,9 +1056,3 @@ textarea.form-control {
   .brand-carousel-item img { width: 76.8px; height: 31.2px; }
   .brand-carousel-item--dark img { height: 100%; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .brand-carousel-viewport { overflow-x: auto; }
-  .brand-carousel-track { animation: none; }
-  .brand-carousel-group { padding-right: 0; }
-  .brand-carousel-group[aria-hidden="true"] { display: none; }
-}
