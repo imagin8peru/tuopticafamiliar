@@ -1028,8 +1028,8 @@ textarea.form-control {
 @media (max-width: 767px) {
   .brand-carousel { padding: 0.4375rem 0; }
   .brand-carousel-layout { gap: 0.5rem; }
-  .brand-carousel-group { gap: 1.5rem; padding-right: 1.5rem; }
-  .brand-carousel-item { width: 128px; height: 36px; }
+  .brand-carousel-group { gap: 0.75rem; padding-right: 0.75rem; }
+  .brand-carousel-item { width: 80px; height: 36px; }
   .brand-carousel-item img { width: 76.8px; height: 31.2px; }
   .brand-carousel-item--dark img { height: 100%; }
 }
