@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios Ópticos Clínicos - Tu Óptica Familiar</title>
   <meta name="description" content="Evaluaciones de la salud visual en San Miguel, Lima. Medida de la vista computarizada, descarte de ambliopía, estrabismo, pterigión y contactología.">
-  <link rel="stylesheet" href="style.css?v=20261010-4">
+  <link rel="stylesheet" href="style.css?v=20261010-5">
   <link rel="icon" href="logo-optica-familiar.jpg" type="image/jpeg">
 </head>
 <body>
@@ -102,23 +102,42 @@
         <hr style="border: 0; height: 1px; background: var(--border-color); margin: 5rem 0;">
 
         <!-- Evaluaciones de salud visual -->
-        <div class="section-header text-center">
+        <div id="patologias" class="section-header text-center">
           <h2>Descarte de Patologías y Evaluaciones Especializadas</h2>
           <p>La salud visual va mucho más allá de leer letras en una cartilla. Cuidamos cada aspecto de tus ojos.</p>
         </div>
 
-        <div id="patologias" class="pathology-panel">
-          <h3>Descarte de Patologías</h3>
-          <p>Complementamos nuestros servicios con las siguientes evaluaciones de salud visual:</p>
-          <ul class="pathology-list">
-            <li>Descarte de catarata</li>
-            <li>Descarte de glaucoma</li>
-            <li>Test de visión cromática</li>
-          </ul>
-          <a href="contacto.html?service=Patologias" class="btn btn-outline">Agendar Evaluación</a>
-        </div>
-
         <div class="services-grid" style="gap: 3rem;">
+          <!-- Catarata -->
+          <div id="catarata" class="service-card" style="padding: 3rem 2.5rem;">
+            <div class="service-icon-box" style="background-color: var(--primary-ultra-light); color: var(--primary);">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 11a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Descarte de Catarata</h3>
+            <p>La catarata es la pérdida de transparencia del cristalino, la lente natural del ojo, que puede dificultar una visión clara. Realizamos una evaluación orientada a identificar señales de esta alteración y brindarte orientación sobre la atención y el seguimiento que puedas necesitar.</p>
+            <a href="contacto.html?service=Catarata" class="btn btn-outline" style="margin-top: auto; font-size: 0.85rem; padding: 0.6rem 1rem;">Agendar Descarte</a>
+          </div>
+
+          <!-- Glaucoma -->
+          <div id="glaucoma" class="service-card" style="padding: 3rem 2.5rem;">
+            <div class="service-icon-box" style="background-color: var(--primary-ultra-light); color: var(--primary);">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 5h2v6h-2zm0 8h2v2h-2z"/></svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Descarte de Glaucoma</h3>
+            <p>El glaucoma es una enfermedad que puede afectar el nervio óptico. La evaluación busca identificar señales de riesgo y orientar la necesidad de una valoración oftalmológica, para favorecer el cuidado y seguimiento de tu salud visual.</p>
+            <a href="contacto.html?service=Glaucoma" class="btn btn-outline" style="margin-top: auto; font-size: 0.85rem; padding: 0.6rem 1rem;">Agendar Descarte</a>
+          </div>
+
+          <!-- Visión cromática -->
+          <div id="vision-cromatica" class="service-card" style="padding: 3rem 2.5rem;">
+            <div class="service-icon-box" style="background-color: var(--primary-ultra-light); color: var(--primary);">
+              <svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="5" fill="currentColor"/><circle cx="16" cy="10" r="5" fill="currentColor" opacity="0.6"/><circle cx="12" cy="16" r="5" fill="currentColor" opacity="0.35"/></svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Test de Visión Cromática</h3>
+            <p>Evaluamos tu capacidad para reconocer y diferenciar los colores mediante pruebas de percepción cromática. Este test permite identificar posibles dificultades en la visión del color y orientarte sobre cómo pueden influir en tus actividades cotidianas, de estudio o de trabajo.</p>
+            <a href="contacto.html?service=Crom%C3%A1tica" class="btn btn-outline" style="margin-top: auto; font-size: 0.85rem; padding: 0.6rem 1rem;">Agendar Test</a>
+          </div>
+
           <!-- Motilidad Ocular -->
           <div id="motilidad" class="service-card" style="padding: 3rem 2.5rem;">
             <div class="service-icon-box" style="background-color: var(--primary-ultra-light); color: var(--primary);">
@@ -217,6 +236,6 @@
     </div>
   </footer>
 
-  <script src="main.js?v=20261010-4"></script>
+  <script src="main.js?v=20261010-5"></script>
 </body>
 </html>

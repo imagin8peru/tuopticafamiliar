@@ -1016,16 +1016,8 @@ textarea.form-control {
 .brand-carousel-item img { width: 96px; height: 38.4px; object-fit: contain; }
 .brand-carousel-item--dark img { background: #171717; border-radius: 4.8px; height: 100%; object-fit: cover; }
 @keyframes brand-scroll { to { transform: translateX(-50%); } }
-.pathology-panel {
-  scroll-margin-top: 6rem; background: var(--primary-ultra-light);
-  border: 1px solid var(--border-color); border-radius: var(--radius-md);
-  padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 3rem;
-}
-.pathology-panel p { color: var(--text-muted); margin: 0.75rem 0 1rem; }
-.pathology-list { display: grid; gap: 0.75rem; padding-left: 1.25rem; margin-bottom: 1.5rem; }
-.service-card-list { display: grid; gap: 0.5rem; padding-left: 1.25rem; margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem; flex-grow: 1; }
+#patologias, .service-card { scroll-margin-top: 6rem; }
 @media (min-width: 768px) {
-  .pathology-list { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
   .services-grid--overview { grid-template-columns: repeat(2, 1fr); }
   .products-grid--overview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
