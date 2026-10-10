@@ -59,6 +59,32 @@
   </div>
 
   <main>
+    <section class="brand-carousel" aria-label="Marcas de monturas" aria-roledescription="carrusel">
+      <div class="container brand-carousel-layout">
+        <div class="brand-carousel-viewport">
+          <div class="brand-carousel-track" id="brand-carousel-track">
+          <ul class="brand-carousel-group">
+            <li class="brand-carousel-item"><img src="rayban-logo.png" alt="Ray-Ban" width="160" height="64" decoding="async"></li>
+            <li class="brand-carousel-item"><img src="oakley-logo.png" alt="Oakley" width="160" height="64" decoding="async"></li>
+            <li class="brand-carousel-item"><img src="vogue-logo.png" alt="Vogue Eyewear" width="160" height="64" decoding="async"></li>
+            <li class="brand-carousel-item"><img src="benetton-logo.png" alt="Benetton" width="160" height="64" decoding="async"></li>
+            <li class="brand-carousel-item brand-carousel-item--dark"><img src="arnette-logo.png" alt="Arnette" width="160" height="64" decoding="async"></li>
+            <li class="brand-carousel-item"><img src="cat-logo.png" alt="CAT" width="160" height="64" decoding="async"></li>
+          </ul>
+          <ul class="brand-carousel-group" aria-hidden="true">
+            <li class="brand-carousel-item"><img src="rayban-logo.png" alt="" width="160" height="64" decoding="async"></li>
+            <li class="brand-carousel-item"><img src="oakley-logo.png" alt="" width="160" height="64" decoding="async"></li>
+            <li class="brand-carousel-item"><img src="vogue-logo.png" alt="" width="160" height="64" decoding="async"></li>
+            <li class="brand-carousel-item"><img src="benetton-logo.png" alt="" width="160" height="64" decoding="async"></li>
+            <li class="brand-carousel-item brand-carousel-item--dark"><img src="arnette-logo.png" alt="" width="160" height="64" decoding="async"></li>
+            <li class="brand-carousel-item"><img src="cat-logo.png" alt="" width="160" height="64" decoding="async"></li>
+          </ul>
+          </div>
+        </div>
+        <button class="brand-carousel-toggle" type="button" aria-controls="brand-carousel-track" aria-label="Pausar carrusel de marcas" aria-pressed="false" hidden>Pausar</button>
+      </div>
+    </section>
+
     <!-- ==========================================
          Hero Section
          ========================================== -->
@@ -103,15 +129,25 @@
           <p>Realizamos evaluaciones completas utilizando equipos de última generación para darte el diagnóstico más preciso.</p>
         </div>
         
-        <div class="services-grid">
+        <div class="services-grid services-grid--overview">
           <!-- Tarjeta 1: Medida computarizada -->
           <div class="service-card">
             <div class="service-icon-box">
               <svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/></svg>
             </div>
-            <h3>Medida de la Vista</h3>
+            <h3>Medida de la Vista Computarizada</h3>
             <p>Examen computarizado completo mediante autorefractómetro para determinar la graduación exacta para tus anteojos.</p>
             <a href="servicios.html#medida" class="service-link">Saber más &rarr;</a>
+          </div>
+
+          <!-- Descarte de patologías -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 5h2v6h-2zm0 8h2v2h-2z"/></svg>
+            </div>
+            <h3>Descarte de Patologías</h3>
+            <p>Evaluaciones de salud visual que incluyen descarte de catarata, descarte de glaucoma y test de visión cromática.</p>
+            <a href="servicios.html#patologias" class="service-link">Saber más &rarr;</a>
           </div>
 
           <!-- Tarjeta 2: Estrabismo -->
@@ -196,6 +232,10 @@
         </div>
 
         <div class="tech-grid">
+          <div class="tech-card" id="antireflex">
+            <h3>Lentes Antiréflex</h3>
+            <p>Tratamiento que reduce los reflejos sobre la superficie de las lunas y permite una visión más clara y cómoda en tus actividades diarias.</p>
+          </div>
           <div class="tech-card">
             <h3>Transitions™ Inteligentes</h3>
             <p>Lunas fotosensibles que se oscurecen automáticamente al salir al sol y vuelven a aclararse en interiores. Protección UV permanente y máxima comodidad.</p>

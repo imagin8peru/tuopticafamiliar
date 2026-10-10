@@ -1,4 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Carrusel de marcas: pausa manual y preferencias de movimiento.
+  const brandCarousel = document.querySelector('.brand-carousel');
+  const carouselToggle = document.querySelector('.brand-carousel-toggle');
+  if (brandCarousel && carouselToggle) {
+    carouselToggle.hidden = false;
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const setPaused = paused => {
+      brandCarousel.classList.toggle('is-paused', paused);
+      carouselToggle.setAttribute('aria-pressed', String(paused));
+      carouselToggle.setAttribute('aria-label', paused ? 'Reanudar carrusel de marcas' : 'Pausar carrusel de marcas');
+      carouselToggle.textContent = paused ? 'Reanudar' : 'Pausar';
+    };
+    const applyMotionPreference = () => {
+      carouselToggle.hidden = motionPreference.matches;
+      setPaused(motionPreference.matches);
+    };
+    carouselToggle.addEventListener('click', () => {
+      setPaused(!brandCarousel.classList.contains('is-paused'));
+    });
+    motionPreference.addEventListener('change', applyMotionPreference);
+    applyMotionPreference();
+  }
+
   // ==========================================================================
   // 1. Menú Móvil (Hamburger Menu)
   // ==========================================================================

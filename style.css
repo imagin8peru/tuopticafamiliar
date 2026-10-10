@@ -995,3 +995,58 @@ textarea.form-control {
     width: calc(33.333% - 1.34rem);
   }
 }
+
+/* Carrusel de marcas debajo del menú principal */
+.brand-carousel {
+  background: var(--bg-white);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.15rem 0;
+}
+.brand-carousel-layout { display: flex; align-items: center; gap: 1rem; }
+.brand-carousel-viewport { overflow: hidden; flex: 1; min-width: 0; }
+.brand-carousel-track { display: flex; width: max-content; animation: brand-scroll 36s linear infinite; }
+.brand-carousel-group {
+  display: flex; align-items: center; gap: 3rem; padding-right: 3rem;
+  list-style: none; flex-shrink: 0;
+}
+.brand-carousel-item {
+  display: flex; align-items: center; justify-content: center;
+  width: 160px; height: 72px; flex-shrink: 0;
+}
+.brand-carousel-item img { width: 100%; height: 64px; object-fit: contain; }
+.brand-carousel-item--dark { background: #171717; border-radius: var(--radius-sm); }
+.brand-carousel-item--dark img { height: 100%; width: 100%; object-fit: cover; }
+.brand-carousel-toggle {
+  flex-shrink: 0; background: var(--primary-ultra-light); color: var(--primary);
+  border: 1px solid var(--border-color); border-radius: var(--radius-sm);
+  font: inherit; font-size: 0.8rem; padding: 0.5rem 0.75rem; cursor: pointer;
+}
+.brand-carousel-toggle[hidden] { display: none; }
+.brand-carousel-toggle:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.brand-carousel-viewport:hover .brand-carousel-track,
+.brand-carousel.is-paused .brand-carousel-track { animation-play-state: paused; }
+@keyframes brand-scroll { to { transform: translateX(-50%); } }
+.pathology-panel {
+  scroll-margin-top: 6rem; background: var(--primary-ultra-light);
+  border: 1px solid var(--border-color); border-radius: var(--radius-md);
+  padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 3rem;
+}
+.pathology-panel p { color: var(--text-muted); margin: 0.75rem 0 1rem; }
+.pathology-list { display: grid; gap: 0.75rem; padding-left: 1.25rem; margin-bottom: 1.5rem; }
+@media (min-width: 768px) {
+  .pathology-list { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .services-grid--overview { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .brand-carousel { padding: 0.75rem 0; }
+  .brand-carousel-layout { gap: 0.5rem; }
+  .brand-carousel-group { gap: 1.5rem; padding-right: 1.5rem; }
+  .brand-carousel-item { width: 128px; height: 60px; }
+  .brand-carousel-item img { height: 52px; }
+  .brand-carousel-item--dark img { height: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brand-carousel-track { animation: none; width: 100%; }
+  .brand-carousel-group { width: 100%; flex-wrap: wrap; justify-content: center; padding: 0; gap: 1.5rem; }
+  .brand-carousel-group[aria-hidden="true"] { display: none; }
+}
