@@ -1006,7 +1006,7 @@ textarea.form-control {
 .brand-carousel-viewport { overflow: hidden; flex: 1; min-width: 0; }
 .brand-carousel-track { display: flex; width: max-content; animation: brand-scroll 36s linear infinite; }
 .brand-carousel-group {
-  display: flex; align-items: center; gap: 3rem; padding-right: 3rem;
+  display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; gap: 3rem; padding-right: 3rem;
   list-style: none; flex-shrink: 0;
 }
 .brand-carousel-item {
@@ -1046,7 +1046,8 @@ textarea.form-control {
   .brand-carousel-item--dark img { height: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .brand-carousel-track { animation: none; width: 100%; }
-  .brand-carousel-group { width: 100%; flex-wrap: wrap; justify-content: center; padding: 0; gap: 1.5rem; }
+  .brand-carousel-viewport { overflow-x: auto; }
+  .brand-carousel-track { animation: none; }
+  .brand-carousel-group { padding-right: 0; }
   .brand-carousel-group[aria-hidden="true"] { display: none; }
 }
