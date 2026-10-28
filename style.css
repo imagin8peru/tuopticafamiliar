@@ -1087,10 +1087,10 @@ textarea.form-control {
 .specialty-section { scroll-margin-top: 6rem; }
 .specialty-subtitle { font-size: clamp(1.2rem, 2.5vw, 1.65rem); margin-bottom: 1rem; }
 .optometry-section { background: var(--primary-ultra-light); }
-.optometry-intro { align-items: center; margin-bottom: 3rem; }
-.optometry-intro p { color: var(--text-muted); max-width: 560px; margin-top: 1rem; }
-.optometry-image { border-radius: var(--radius-lg); overflow: hidden; height: 280px; }
-.optometry-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 38%; }
+.specialty-intro { align-items: center; margin-bottom: 3rem; }
+.specialty-intro p { color: var(--text-muted); max-width: 560px; margin-top: 1rem; }
+.specialty-image { border-radius: var(--radius-lg); overflow: hidden; height: 280px; }
+.specialty-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 38%; }
 .optometry-card { padding: 2.25rem 2rem; }
 .optometry-card h3 { font-size: 1.5rem; }
 .optometry-card .service-icon-box svg { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
