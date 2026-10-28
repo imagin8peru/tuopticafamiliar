@@ -1056,3 +1056,8 @@ textarea.form-control {
   .brand-carousel-item img { width: 76.8px; height: 31.2px; }
   .brand-carousel-item--dark img { height: 100%; }
 }
+
+/* Tres servicios destacados en el inicio, tras integrar motilidad en patologías. */
+@media (min-width: 1024px) {
+  .services-grid--overview { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
