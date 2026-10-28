@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto y Citas - Tu Óptica Familiar</title>
   <meta name="description" content="Agenda tu examen de la vista en San Miguel, Lima. Dirección, horario, teléfono, WhatsApp y mapa de ubicación de Tu Óptica Familiar.">
-  <link rel="stylesheet" href="style.css?v=20261028-2">
+  <link rel="stylesheet" href="style.css?v=20261028-3">
   <link rel="icon" href="logo-optica-familiar.jpg" type="image/jpeg">
 </head>
 <body>
@@ -161,7 +161,15 @@
             <div class="form-group">
               <label for="service" class="form-label">Tipo de Examen/Consulta *</label>
               <select id="service" class="form-control" required>
-                <option value="Medida de la Vista Computarizada">Medida de la Vista Computarizada</option>
+                <optgroup label="Optometría">
+                  <option value="Examen Visual Computarizado">Examen Visual Computarizado</option>
+                  <option value="Medida de la Vista Computarizada">Medición de la Vista</option>
+                  <option value="Prescripción de Lentes">Prescripción de Lentes</option>
+                  <option value="Adaptación de Lentes de Contacto">Adaptación de Lentes de Contacto</option>
+                  <option value="Evaluación de la Visión Binocular">Evaluación de la Visión Binocular</option>
+                  <option value="Control de Seguimiento Visual">Control de Seguimiento Visual</option>
+                </optgroup>
+                <optgroup label="Oftalmología">
                 <option value="Patologias">Descarte de Patologías (catarata, glaucoma y visión cromática)</option>
                 <option value="Descarte de Catarata">Descarte de Catarata</option>
                 <option value="Descarte de Glaucoma">Descarte de Glaucoma</option>
@@ -169,7 +177,7 @@
                 <option value="Descarte de Estrabismo / Motilidad">Motilidad Ocular y Estrabismo</option>
                 <option value="Descarte de Ambliopia">Descarte de Ambliopía (Ojo Vago)</option>
                 <option value="Descarte de Pterigion">Descarte de Pterigión (Carnosidad)</option>
-                <option value="Adaptación Lentes de Contacto">Contactología (Lentes de Contacto)</option>
+                </optgroup>
               </select>
             </div>
 
@@ -249,7 +257,9 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const urlParams = new URLSearchParams(window.location.search);
-      const serviceParam = urlParams.get('service');
+      const requestedService = urlParams.get('service');
+      const aliases = { Contactologia: 'Adaptación de Lentes de Contacto' };
+      const serviceParam = aliases[requestedService] || requestedService;
       if (serviceParam) {
         const select = document.getElementById('service');
         if (select) {
@@ -265,6 +275,6 @@
     });
   </script>
 
-  <script src="main.js?v=20261028-2"></script>
+  <script src="main.js?v=20261028-3"></script>
 </body>
 </html>
