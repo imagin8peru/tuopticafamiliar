@@ -1061,3 +1061,33 @@ textarea.form-control {
 @media (min-width: 1024px) {
   .services-grid--overview { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+/* Banner de tratamientos: resumen en Inicio y detalle en Productos. */
+.lenses-banner {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  margin-top: 4rem;
+  background: #004d40;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.lenses-banner-content { padding: clamp(2rem, 4vw, 3.5rem); color: #fff; }
+.lenses-banner-eyebrow { display: block; color: #b7e5d2; font-size: .7rem; font-weight: 600; letter-spacing: .15em; margin-bottom: 1rem; }
+.lenses-banner h3 { color: #fff; font-size: clamp(1.8rem, 3vw, 2.65rem); line-height: 1.15; margin-bottom: 1.25rem; }
+.lenses-banner p { color: #e0ede8; font-size: .94rem; line-height: 1.75; }
+.lenses-banner-options { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 1.5rem 0 1.75rem; list-style: none; }
+.lenses-banner-options li { padding: .35rem .7rem; border: 1px solid #ffffff3b; border-radius: 999px; color: #f0f8f4; font-size: .75rem; line-height: 1.5; }
+.lenses-banner .lenses-banner-button { background: #fff; color: #005443; gap: .8rem; font-size: .85rem; padding: .85rem 1.15rem; text-align: center; }
+.lenses-banner .lenses-banner-button:hover { background: #dff4e9; transform: translateY(-2px); }
+.lenses-banner-image { min-width: 0; min-height: 350px; }
+.lenses-banner-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+#tecnologias { scroll-margin-top: 7rem; }
+@media (max-width: 767px) {
+  .lenses-banner { grid-template-columns: 1fr; margin-top: 2.75rem; }
+  .lenses-banner-content { padding: 1.75rem 1.5rem 2rem; }
+  .lenses-banner-image { min-height: 0; aspect-ratio: 3 / 2; }
+  .lenses-banner h3 { font-size: 2rem; }
+  .lenses-banner p { font-size: .9rem; }
+  .lenses-banner .lenses-banner-button { width: 100%; }
+}
