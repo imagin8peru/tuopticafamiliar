@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   
   // Número de WhatsApp de la Óptica (puedes cambiarlo al real del cliente)
-  const WHATSAPP_PHONE = '51962768359'; 
+  const WHATSAPP_PHONE = '51999961422'; 
 
   // Formulario de Citas (contacto.html)
   const appointmentForm = document.getElementById('appointmentForm');
